@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/styles/normalize.css"> -->
 </head>
 <body class="container">
@@ -12,15 +13,15 @@
         <span class="header__title">Alice_V</span>
         <nav class="header__menu">
             <ul class="header__menu-list">
-                <li class="header__menu-item"><a class="header__menu-link" href="#">About</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">Skills</a></li>
-                <li class="header__menu-item header__menu-item--last"><a class="header__menu-link" href="#">Projects</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#anchorLink-about">About</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#anchorLink-skills">Skills</a></li>
+                <li class="header__menu-item header__menu-item--last"><a class="header__menu-link" href="#anchorLink-projects">Projects</a></li>
             </ul>
         </nav>
         <address class="header__contact">
             <a href="#" class="header__contact-link"><img src="./assets/images/contact_Linkedin.svg" alt="linkedinSvg_contact" class="header__contact-svg">Linkedin</a>
-            <a href="#" class="header__contact-link"><img src="./assets/images/contact_Github.svg" alt="githubSvg_contact" class="header__contact-svg">Github</a>
-            <a href="#" class="header__contact-link header__contact-link--contact"><img src="assets/images/contact_Envelope.svg" alt="" class="header__contact-svg">Contact me</a>
+            <a href="https://github.com/av6920337" class="header__contact-link"><img src="./assets/images/contact_Github.svg" alt="githubSvg_contact" class="header__contact-svg">Github</a>
+            <a href="mailto:your-email@example.com" class="header__contact-link header__contact-link--contact"><img src="assets/images/contact_Envelope.svg" alt="" class="header__contact-svg">Contact me</a>
         </address>
     </header>
     <main class="info">
@@ -56,7 +57,7 @@
             <img src="assets/images/info_3svg.svg" alt="svg" class="info-wrap2__img info-wrap2__img3">
         </div>
     </main>
-    <section class="aboutMe">
+    <section class="aboutMe" id="anchorLink-about">
         <div class="aboutMe__wrap">
             <h3 class="aboutMe__wrap-title">aboutMe<span class="aboutMe__wrap-title-span"> ( )</span></h3>
             <ul class="aboutMe__wrap-title-list">
@@ -84,7 +85,7 @@
             <div class="aboutMe__wrap2-block">
                 <div class="aboutMe__wrap2-block-container">
                     <span class="aboutMe__wrap2-block-span">Frontend Developer</span>
-                    <a href="#" class="aboutMe__wrap2-block-link">Projects</a>
+                    <a href="#anchorLink-projects" class="aboutMe__wrap2-block-link">Projects</a>
                 </div>
                 <span class="aboutMe__wrap2-block-symbol">&lt;/&gt;</span>
             </div>
@@ -99,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="anchorLink-skills">
         <h3 class="skills__title">skills<span class="aboutMe__wrap-title-span"> ( )</span></h3>
         <div class="skills__block">
             <img src="assets/images/skills1_JS.svg" alt="js.svg" class="skills__block-img">
@@ -110,13 +111,42 @@
             <img src="assets/images/skills5_SASS.svg" alt="sass.svg" class="skills__block-img">
             <img src="assets/images/skills6_Bootstrap.svg" alt="bootstrap.svg" class="skills__block-img">
             <img src="assets/images/skills10_WebPack.svg" alt="webpack.svg" class="skills__block-img">
-        </div>
             <img src="assets/images/skills7_Git.svg" alt="git.svg" class="skills__block-img">
             <img src="assets/images/skills8_Figma.svg" alt="figma.svg" class="skills__block-img">
             <img src="assets/images/skills9_DevTools.svg" alt="devTools.svg" class="skills__block-img">
         </div>
     </section>
-    <section class="projects"></section>
-    <!-- <script src="assets/script/index.js"></script> -->
+    <section class="projects" id="anchorLink-projects">
+        <h3 class="projects__title">projects<span class="aboutMe__wrap-title-span"> ( )</span></h3>
+        <div class='projects__carousel'>
+            <div class='projects__carousel-inner'>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://wa.me/your-number" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/your-username" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your-username" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:your-email@example.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alice_V</p>
+        </div>
+    </footer>
+    <script src="assets/script/index.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 } */
 .container{
     /* background: linear-gradient(135.00deg, rgb(0, 0, 0) 0%,rgb(39, 39, 39) 44.033%,rgb(73, 73, 73) 99.99%,rgb(114, 114, 114) 100%); */
+    max-width: 1800px;
     background-color: #000;
     margin: 0 auto;
     padding: 5%;
@@ -19,12 +20,12 @@
     --svg-size: 25.5px;
 }
 
-.header , .info , .aboutMe {
+.header , .info , .aboutMe{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
     margin-bottom: 5%;
 }
 .header__title {
@@ -124,9 +125,6 @@
     100% { background-position: 0 0; }
 }
 
-
-/* .info-wrap {
-} */
 .info-wrap__greeting {
     color: rgb(224, 224, 224);
     font-family: Roboto;
@@ -207,10 +205,11 @@
     bottom: 1%;
     right: 13%;
 }
+
 .aboutMe__wrap {
     width: 748px;
 }
-.aboutMe__wrap-title , .skills__title{
+.aboutMe__wrap-title , .skills__title, .projects__title{
     font-family: Roboto;
     font-size: 49px;
     font-weight: 700;
@@ -263,11 +262,176 @@
     color:rgb(112, 255, 0);
     padding: 10px;
 }
-/* .skills {} */
 
-.skills__block {
+.skills {
+    margin-bottom: 5%;
 }
 .skills__block-img {
     width: 10%;
     padding: 1%;
 }
+
+
+.projects {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    flex-direction: column;
+    overflow: hidden; /* Чтобы ничего не выходило за рамки */
+}
+
+.projects__title {
+    font-family: Roboto;
+    font-size: 49px;
+    font-weight: 700;
+    color: rgb(112, 255, 0);
+}
+
+.aboutMe__wrap-title-span {
+    color: #fff;
+}
+
+.projects__carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.projects__carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.projects__carousel-card {
+    min-width: calc(100% / 2); /* Точно делим на количество элементов в видимой области */
+}
+.test {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.projects__carousel-card_link {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(79, 79, 79);
+}
+
+.projects__carousel-card_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+.footer {
+    color: #f0f0f0;
+    font-family: Roboto;
+}
+
+.footer-section {
+    width: 100%;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 43px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 41%;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(112, 255, 0);
+}
+
+.footer-section  a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section  a:hover {
+    color: #3498db;
+}
+
+.footer-section  a i {
+    margin-right: 5px;
+    color: #3498db;
+}
+
+.social-links {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    position: relative;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #3498db;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .back-to-top {
+        right: 10px;
+        bottom: 10px;
+    }
+} */
