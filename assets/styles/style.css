@@ -56,7 +56,10 @@
     font-weight: var(--font-weight-bold);
     text-decoration: none;
 }
-
+.header__menu-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+}
 .header__contact-link {
     margin-right: var(--spacing-medium);
 }
